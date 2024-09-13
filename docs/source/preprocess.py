@@ -74,6 +74,6 @@ def generate_trinket_iframe(code, width='300', height='500', embed_type='python'
     src_url = f'{base_url}{embed_type}#code={encoded_code}'
 
     # Construct and return the iframe HTML string
-    iframe_html = f'<iframe width="{width}" height="{height}" src="{src_url}" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>'
+    iframe_html = f'<div class="iframe-container"><iframe width="{width}" height="{height}" src="{src_url}" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>'
 
     return iframe_html

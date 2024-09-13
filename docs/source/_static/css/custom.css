@@ -5,8 +5,6 @@ img.inline {
 }
 
 
-
-
 span.button {
     background-color: orange; 
     padding: 10px 24px;
@@ -128,4 +126,15 @@ button:hover {
     background-color: #45a049;
 }
 
+/* Add this to your Sphinx custom CSS file */
+iframe {
+    overflow: hidden; /* Prevent scrolling within the iframe itself */
+    border: none;     /* Optional: Remove the border for cleaner appearance */
+    pointer-events: none; /* Prevent focus and interactions that might trigger scrolling */
+}
 
+/* Container styles to handle iframe overflow */
+.iframe-container {
+    overflow: hidden; /* Hide any overflow from the iframe content */
+    position: relative; /* Ensure proper positioning context */
+}
