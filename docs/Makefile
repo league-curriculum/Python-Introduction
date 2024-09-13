@@ -26,7 +26,8 @@ help:
 publish:
 	@make html
 	@echo "Publishing to $(REPO_URL)"
-	@ghp-import -s -n -p --cname $(CNAME) -f ./build/html 
+	#@ghp-import -n -p --cname $(CNAME) -f ./build/html 
+	@ghp-import -n -p  -f ./build/html 
 
 livehtml:
 	sphinx-autobuild --open-browser "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O) 

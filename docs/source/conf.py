@@ -15,7 +15,6 @@ logger = logging.getLogger(__name__)
 
 logger.setLevel(logging.INFO)
 
-
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
 from preprocess import replace_python, generate_trinket_iframe
@@ -24,7 +23,7 @@ project = 'Python-Introduction'
 copyright = '2024, The League'
 author = 'Eric Busboom'
 
-html_title = 'Introduction to Pyton '
+html_title = 'Introduction to Python '
 html_logo = 'https://images.jointheleague.org/logos/logo4.png'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

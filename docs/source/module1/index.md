@@ -1,9 +1,9 @@
 # Remembering and Repeating
 
-Oh Boy Turtles!
 
 ```{toctree}
 :maxdepth: 2
+:hidden:
 
 010_var_loop_list.md
 020_variables.md
