@@ -1,11 +1,8 @@
 # Final Project
 
-For your final  project, you are going to learn the most important lesson
-that a programmer can learn:
+For your final project, remember the important lesson you learned from "Tina's Secrets":
 
 <p style="text-align: center; font-size: 40px; font-weight: bold; color: red; font-family: 'Comic Sans MS', cursive, sans-serif;">Read The Documentation!</p>
-
-We've been using the Python turtle for all this time, but we haven't read the documentation yet! 
 
 So, for this project, you are going to get to read the documentation to write a new program
 that uses some turtle features that we haven't learned yet. 
@@ -23,10 +20,14 @@ But first, visit the [Python Turtle Library Documentation](https://docs.python.o
 to see if there is anything you'd like to try. You should especially look at [The Graphics Methods](https://docs.python.org/3/library/turtle.html#turtle-graphics-reference) to see if there are any functions that look interesting, like `stamp()`.
 
 
-Note! This editor is set to be larger than the others, so you can seem more of
-your code. You will probably want to use the Fullscreen options to see more of
-your code at once. ( Click on the three bars menu in the upper right corner of
-the editor, and then click on the Fullscreen icon. )
+```{note}
+This editor is set to be larger than the others, so you can see more of your code. 
+You will probably want to use the Fullscreen options to see more of your code at once.
+ (Click on the three bars menu in the upper right corner of the editor, and then 
+ click on the Fullscreen icon.)
+ ```
+
+
 
 ```python.run:height=800,width=1200
 
