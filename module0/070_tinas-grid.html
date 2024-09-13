@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Remembering and Repeating" href="../module1/index.html" /><link rel="prev" title="Going in Circles" href="060_going-in-circles.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Tina’s Secrets" href="080_tinas-secrets.html" /><link rel="prev" title="Going in Circles" href="060_going-in-circles.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2024.08.06 -->
         <title>Tina’s Grid - Introduction to Python</title>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=a6f144bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=aee0623b" />
     
     
 
@@ -214,12 +214,12 @@
 <li class="toctree-l2"><a class="reference internal" href="050_tinas-pen.html">Tina’s Pen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="060_going-in-circles.html">Going in Circles</a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Tina’s Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="080_tinas-secrets.html">Tina’s Secrets</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../module1/index.html">Remembering and Repeating</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Remembering and Repeating</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../module1/010_var_loop_list.html">Variables Loops and Lists</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module1/020_variables.html">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../module1/020_variables.html#turtle-variables">Turtle Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module1/030_loops.html">Loops for Easy Squares</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module1/040_functions.html">Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module1/050_crazy_shapes.html">Crazy Shapes</a></li>
@@ -235,10 +235,8 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../module3/index.html">Lists Strings and Iterables</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Lists Strings and Iterables</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../module3/adv_loops.html">Advanced Loops</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/more_lists.html">Iterating over Iterables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/more_lists.html#show-us-your-lists">Show Us Your Lists!</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../module3/reading_pi.html">Reciting Pi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/yet_more_lists.html">Unpacking Tuples</a></li>
 </ul>
 </li>
@@ -288,9 +286,9 @@
 <p>Tina’s world is a grid of squares like the one we sometimes use to graph in Algebra and Geometry.</p>
 <iframe src="//player.vimeo.com/video/107876386?title=0&amp;byline=0&amp;portrait=0" width="710" height="249" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p>We can tell Tina to go directly to a specific point on the graph.  This makes it easy to teach her to draw something!</p>
-<iframe width="700" height="484" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%27turtle%27%29%0A%0Atina.penup%28%29%0Atina.write%28%22I%20start%20at%200%2C%200%22%29%0A%0Atina.goto%28100%2C100%29%0Atina.write%28%22This%20is%20100%2C%20100%22%29%0A%0Atina.goto%28-100%2C-100%29%0Atina.write%28%22This%20is%20-100%2C%20-100%22%29%0A%0Atina.goto%28100%2C-100%29%0Atina.write%28%22This%20is%20100%2C%20-100%22%29%0A%0Atina.goto%28-100%2C100%29%0Atina.write%28%22This%20is%20-100%2C%20100%22%29%0A%0Atina.goto%28-100%2C%200%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="484" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%27turtle%27%29%0A%0Atina.penup%28%29%0Atina.write%28%22I%20start%20at%200%2C%200%22%29%0A%0Atina.goto%28100%2C100%29%0Atina.write%28%22This%20is%20100%2C%20100%22%29%0A%0Atina.goto%28-100%2C-100%29%0Atina.write%28%22This%20is%20-100%2C%20-100%22%29%0A%0Atina.goto%28100%2C-100%29%0Atina.write%28%22This%20is%20100%2C%20-100%22%29%0A%0Atina.goto%28-100%2C100%29%0Atina.write%28%22This%20is%20-100%2C%20100%22%29%0A%0Atina.goto%28-100%2C%200%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>The grid goes from -200 to 200 in both directions.  You can send Tina to points outside her grid, but then you won’t see what she’s doing.</p>
-<iframe width="700" height="314" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%27turtle%27%29%0A%0Atina.goto%28200%2C200%29%0Atina.goto%28-200%2C200%29%0Atina.goto%28200%2C-200%29%0Atina.goto%28-200%2C-200%29%0Atina.goto%280%2C0%29%0A%0Atina.write%28%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20This%20is%20how%20big%20my%20grid%20is%21%22%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="314" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%27turtle%27%29%0A%0Atina.goto%28200%2C200%29%0Atina.goto%28-200%2C200%29%0Atina.goto%28200%2C-200%29%0Atina.goto%28-200%2C-200%29%0Atina.goto%280%2C0%29%0A%0Atina.write%28%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20This%20is%20how%20big%20my%20grid%20is%21%22%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Play around drawing with Tina.  Send her to other points on the grid with a new line like this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">tina</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="mi">37</span><span class="p">,</span><span class="o">-</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
@@ -307,12 +305,12 @@ course.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../module1/index.html">
+          <a class="next-page" href="080_tinas-secrets.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Remembering and Repeating</div>
+                <div class="title">Tina’s Secrets</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -337,7 +335,7 @@ course.</p>
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on Sep 12, 2024 20:51</div>
+              Last updated on Sep 13, 2024 13:56</div>
           </div>
           <div class="right-details">
             
@@ -363,5 +361,6 @@ course.</p>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/custom.js?v=dec66574"></script>
     </body>
 </html>

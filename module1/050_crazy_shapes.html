@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=a6f144bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=aee0623b" />
     
     
 
@@ -214,12 +214,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../module0/050_tinas-pen.html">Tina’s Pen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/060_going-in-circles.html">Going in Circles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/070_tinas-grid.html">Tina’s Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module0/080_tinas-secrets.html">Tina’s Secrets</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Remembering and Repeating</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Remembering and Repeating</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="010_var_loop_list.html">Variables Loops and Lists</a></li>
 <li class="toctree-l2"><a class="reference internal" href="020_variables.html">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="020_variables.html#turtle-variables">Turtle Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="030_loops.html">Loops for Easy Squares</a></li>
 <li class="toctree-l2"><a class="reference internal" href="040_functions.html">Functions</a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Crazy Shapes</a></li>
@@ -235,10 +235,8 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../module3/index.html">Lists Strings and Iterables</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Lists Strings and Iterables</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../module3/adv_loops.html">Advanced Loops</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/more_lists.html">Iterating over Iterables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/more_lists.html#show-us-your-lists">Show Us Your Lists!</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../module3/reading_pi.html">Reciting Pi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/yet_more_lists.html">Unpacking Tuples</a></li>
 </ul>
 </li>
@@ -296,18 +294,18 @@ program to make other shapes. Try some of these things:</p>
 </ul>
 </li>
 </ul>
-<iframe width="700" height="382" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%20%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22arrow%22%29%0Atina.speed%280%29%0A%0Aforward%20%3D%2050%0Aleft%20%3D%2090%0Asides%20%3D%204%0A%0Adef%20side%28turtle%2C%20forward%2C%20left%29%3A%0A%20%20turtle.forward%28forward%29%0A%20%20turtle.left%28left%29%0A%0Afor%20i%20in%20range%28sides%29%3A%0A%20%20side%28tina%2C%20forward%2C%20left%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="382" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%20%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22arrow%22%29%0Atina.speed%280%29%0A%0Aforward%20%3D%2050%0Aleft%20%3D%2090%0Asides%20%3D%204%0A%0Adef%20side%28turtle%2C%20forward%2C%20left%29%3A%0A%20%20turtle.forward%28forward%29%0A%20%20turtle.left%28left%29%0A%0Afor%20i%20in%20range%28sides%29%3A%0A%20%20side%28tina%2C%20forward%2C%20left%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Here are some more ideas for you. You can put a loop inside a loop! Try this
 program.</p>
-<iframe width="700" height="314" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22circle%22%29%0Atina.speed%280%29%0A%0Aleft%20%3D%2020%0A%0Afor%20i%20in%20range%286%29%3A%0A%20%20for%20forward%20in%20range%28-50%2C50%2C10%29%3A%0A%20%20%20%20tina.forward%28forward%29%0A%20%20%20%20tina.left%28left%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="314" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22circle%22%29%0Atina.speed%280%29%0A%0Aleft%20%3D%2020%0A%0Afor%20i%20in%20range%286%29%3A%0A%20%20for%20forward%20in%20range%28-50%2C50%2C10%29%3A%0A%20%20%20%20tina.forward%28forward%29%0A%20%20%20%20tina.left%28left%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Here is another crazy program:</p>
-<iframe width="700" height="467" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22triangle%22%29%0Atina.speed%280%29%0A%0Aforward%20%3D%2050%0A%0A%0Adef%20side%28turtle%2C%20forward%2C%20left%29%3A%0A%20%20turtle.forward%28forward%29%0A%20%20turtle.left%28left%29%0A%0A%0Adef%20make_shape%28turtle%2C%20forward%2C%20left%2C%20sides%29%3A%0A%20%20for%20i%20in%20range%28sides%29%3A%0A%20%20%20%20side%28turtle%2C%20forward%2C%20left%29%0A%0Afor%20sides%20in%20range%284%2C%209%29%3A%0A%20%20left%20%3D%20360%20/%20sides%0A%20%20make_shape%28tina%2C%20forward%2C%20left%2C%20sides%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="467" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22triangle%22%29%0Atina.speed%280%29%0A%0Aforward%20%3D%2050%0A%0A%0Adef%20side%28turtle%2C%20forward%2C%20left%29%3A%0A%20%20turtle.forward%28forward%29%0A%20%20turtle.left%28left%29%0A%0A%0Adef%20make_shape%28turtle%2C%20forward%2C%20left%2C%20sides%29%3A%0A%20%20for%20i%20in%20range%28sides%29%3A%0A%20%20%20%20side%28turtle%2C%20forward%2C%20left%29%0A%0Afor%20sides%20in%20range%284%2C%209%29%3A%0A%20%20left%20%3D%20360%20/%20sides%0A%20%20make_shape%28tina%2C%20forward%2C%20left%2C%20sides%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Now try creating your own crazy progam. This time, you will start from an empty
 file, so copy parts from other programs to get started. You can also
 get some <a class="reference external" href="https://allinpython.com/top-5-awesome-python-turtle-graphics/">great ideas from this website</a></p>
-<iframe width="700" height="600" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="600" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Now we can get to writing a more complex program. Use what you know about Tina the Turtle from previous programs, and what you’ve just learned about loops to write the program below. Read the comments for hints about what you should do.</p>
-<iframe width="700" height="858" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0A%0A%0Awindow%20%3D%20turtle.Screen%28%29%0Awindow.bgcolor%28%27white%27%29%0A%0A%23%20This%20code%20makes%20a%20new%20Turtle.%20Pick%20a%20new%20%0A%23%20name%20for%20the%20turtle%0Amy_turtle%20%3D%20turtle.Turtle%28%29%0A%0A%23%20Make%20your%20turtle%27s%20shape%20%27turtle%27%2C%20.shape%28%27turtle%27%29%0A%0A%23%20Set%20your%20turtle%27s%20speed%20using%20.speed%282%29%0A%0A%23%20Set%20your%20turtle%27s%20color%20using%20.color%28%27green%27%29%20%0A%23%20and%20.pencolor%28%27blue%27%29%0A%0A%23%20Move%20your%20turtle%20forward%20using%20.forward%28100%29%0A%23%20TEST%20%20%20%20Did%20your%20turtle%20move%20forward%3F%0A%0A%23%20Move%20your%20turtle%20left%20or%20right%20using%20.left%2890%29%20%0A%23%20or%20.right%2890%29%0A%0A%23%20Now%20put%20the%20forward%20and%20left/right%20code%20into%20a%20for%20%0A%23%20loop%20to%20repeat%204%20times.%0A%23%20TEST%20%20%20%20Did%20your%20turtle%20draw%20a%20square%3F%0A%0A%23%20Move%20your%20turtle%20to%20a%20new%20place%20on%20the%20%0A%23%20screen%20using%20.goto%28x%2C%20y%29%20x%3D0%20and%20y%3D0%20is%20the%20%0A%23%20center%20of%20the%20screen%0A%0A%23%20Have%20your%20turtle%20draw%20a%20circle%20using%20%0A%23%20.circle%28radius%2C%20steps%3D30%29%0A%23%20TEST%20%20%20%20Did%20your%20turtle%20draw%20a%20circle%3F%0A%0A%23%20Add%20color%20to%20your%20shape%20by%20adding%20.begin_fill%28%29%20%0A%23%20before%20drawing%20the%20circle%0A%23%20and%20.end_fill%28%29%20below%0A%0A%23%20Draw%203%20more%20shapes%20with%20different%20fill%20colors%21%0A%0A%23%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20DO%20NOT%20EDIT%20THE%20CODE%20BELOW%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0Aturtle.done%28%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="858" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0A%0A%0Awindow%20%3D%20turtle.Screen%28%29%0Awindow.bgcolor%28%27white%27%29%0A%0A%23%20This%20code%20makes%20a%20new%20Turtle.%20Pick%20a%20new%20%0A%23%20name%20for%20the%20turtle%0Amy_turtle%20%3D%20turtle.Turtle%28%29%0A%0A%23%20Make%20your%20turtle%27s%20shape%20%27turtle%27%2C%20.shape%28%27turtle%27%29%0A%0A%23%20Set%20your%20turtle%27s%20speed%20using%20.speed%282%29%0A%0A%23%20Set%20your%20turtle%27s%20color%20using%20.color%28%27green%27%29%20%0A%23%20and%20.pencolor%28%27blue%27%29%0A%0A%23%20Move%20your%20turtle%20forward%20using%20.forward%28100%29%0A%23%20TEST%20%20%20%20Did%20your%20turtle%20move%20forward%3F%0A%0A%23%20Move%20your%20turtle%20left%20or%20right%20using%20.left%2890%29%20%0A%23%20or%20.right%2890%29%0A%0A%23%20Now%20put%20the%20forward%20and%20left/right%20code%20into%20a%20for%20%0A%23%20loop%20to%20repeat%204%20times.%0A%23%20TEST%20%20%20%20Did%20your%20turtle%20draw%20a%20square%3F%0A%0A%23%20Move%20your%20turtle%20to%20a%20new%20place%20on%20the%20%0A%23%20screen%20using%20.goto%28x%2C%20y%29%20x%3D0%20and%20y%3D0%20is%20the%20%0A%23%20center%20of%20the%20screen%0A%0A%23%20Have%20your%20turtle%20draw%20a%20circle%20using%20%0A%23%20.circle%28radius%2C%20steps%3D30%29%0A%23%20TEST%20%20%20%20Did%20your%20turtle%20draw%20a%20circle%3F%0A%0A%23%20Add%20color%20to%20your%20shape%20by%20adding%20.begin_fill%28%29%20%0A%23%20before%20drawing%20the%20circle%0A%23%20and%20.end_fill%28%29%20below%0A%0A%23%20Draw%203%20more%20shapes%20with%20different%20fill%20colors%21%0A%0A%23%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20DO%20NOT%20EDIT%20THE%20CODE%20BELOW%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0Aturtle.done%28%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 </section>
 
         </article>
@@ -345,7 +343,7 @@ get some <a class="reference external" href="https://allinpython.com/top-5-aweso
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on Sep 12, 2024 20:51</div>
+              Last updated on Sep 13, 2024 13:56</div>
           </div>
           <div class="right-details">
             
@@ -371,5 +369,6 @@ get some <a class="reference external" href="https://allinpython.com/top-5-aweso
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/custom.js?v=dec66574"></script>
     </body>
 </html>

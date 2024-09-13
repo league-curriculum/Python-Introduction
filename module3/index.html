@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Advanced Loops" href="adv_loops.html" /><link rel="prev" title="Drawing Houses" href="../module2/040_houses.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Iterating over Iterables" href="more_lists.html" /><link rel="prev" title="Drawing Houses" href="../module2/040_houses.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2024.08.06 -->
         <title>Lists Strings and Iterables - Introduction to Python</title>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=a6f144bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=aee0623b" />
     
     
 
@@ -214,12 +214,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../module0/050_tinas-pen.html">Tina’s Pen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/060_going-in-circles.html">Going in Circles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/070_tinas-grid.html">Tina’s Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module0/080_tinas-secrets.html">Tina’s Secrets</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../module1/index.html">Remembering and Repeating</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Remembering and Repeating</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../module1/010_var_loop_list.html">Variables Loops and Lists</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module1/020_variables.html">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../module1/020_variables.html#turtle-variables">Turtle Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module1/030_loops.html">Loops for Easy Squares</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module1/040_functions.html">Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module1/050_crazy_shapes.html">Crazy Shapes</a></li>
@@ -235,10 +235,8 @@
 </ul>
 </li>
 <li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Lists Strings and Iterables</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Lists Strings and Iterables</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="adv_loops.html">Advanced Loops</a></li>
 <li class="toctree-l2"><a class="reference internal" href="more_lists.html">Iterating over Iterables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="more_lists.html#show-us-your-lists">Show Us Your Lists!</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reading_pi.html">Reciting Pi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="yet_more_lists.html">Unpacking Tuples</a></li>
 </ul>
 </li>
@@ -287,7 +285,6 @@
 <h1>Lists Strings and Iterables<a class="headerlink" href="#lists-strings-and-iterables" title="Link to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="adv_loops.html">Advanced Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="more_lists.html">Iterating over Iterables</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="more_lists.html#iterables">Iterables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="more_lists.html#sorting">Sorting</a></li>
@@ -295,7 +292,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="more_lists.html#show-us-your-lists">Show Us Your Lists!</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reading_pi.html">Reciting Pi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="yet_more_lists.html">Unpacking Tuples</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="yet_more_lists.html#zip-and-enumerate">Zip and Enumerate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="yet_more_lists.html#a-zippy-program">A Zippy Program</a></li>
@@ -310,12 +306,12 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="adv_loops.html">
+          <a class="next-page" href="more_lists.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Advanced Loops</div>
+                <div class="title">Iterating over Iterables</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -340,7 +336,7 @@
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on Sep 12, 2024 20:51</div>
+              Last updated on Sep 13, 2024 13:56</div>
           </div>
           <div class="right-details">
             
@@ -366,5 +362,6 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/custom.js?v=dec66574"></script>
     </body>
 </html>

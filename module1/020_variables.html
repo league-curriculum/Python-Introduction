@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=a6f144bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=aee0623b" />
     
     
 
@@ -214,12 +214,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../module0/050_tinas-pen.html">Tina’s Pen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/060_going-in-circles.html">Going in Circles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/070_tinas-grid.html">Tina’s Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module0/080_tinas-secrets.html">Tina’s Secrets</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Remembering and Repeating</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Remembering and Repeating</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="010_var_loop_list.html">Variables Loops and Lists</a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#turtle-variables">Turtle Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="030_loops.html">Loops for Easy Squares</a></li>
 <li class="toctree-l2"><a class="reference internal" href="040_functions.html">Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="050_crazy_shapes.html">Crazy Shapes</a></li>
@@ -235,10 +235,8 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../module3/index.html">Lists Strings and Iterables</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Lists Strings and Iterables</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../module3/adv_loops.html">Advanced Loops</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/more_lists.html">Iterating over Iterables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/more_lists.html#show-us-your-lists">Show Us Your Lists!</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../module3/reading_pi.html">Reciting Pi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/yet_more_lists.html">Unpacking Tuples</a></li>
 </ul>
 </li>
@@ -312,7 +310,7 @@ your variables don’t add to 15.  Make the variables add to 15 to make the
 <code class="docutils literal notranslate"><span class="pre">assert</span></code> happy, then try making it unhappy by making them add to any other
 number, just to see whan an error looks like. We will sometimes use <code class="docutils literal notranslate"><span class="pre">assert</span></code>
 to check if your answers are correct.</p>
-<iframe width="700" height="280" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A%23%20Make%20the%20numbers%20add%20to%2015%0A%0Ax%20%3D%2010%0Ay%20%3D%20%20%20%23%20Finish%20the%20line%20with%20the%20right%20string%0A%0Aassert%20x%20%2B%20y%20%3D%3D%2015%2C%20%22The%20sum%20should%20be%2015%22%0A%0Aprint%28%22Yeah%21%20%F0%9F%8E%89%22%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="280" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A%23%20Make%20the%20numbers%20add%20to%2015%0A%0Ax%20%3D%2010%0Ay%20%3D%20%20%20%23%20Finish%20the%20line%20with%20the%20right%20string%0A%0Aassert%20x%20%2B%20y%20%3D%3D%2015%2C%20%22The%20sum%20should%20be%2015%22%0A%0Aprint%28%22Yeah%21%20%F0%9F%8E%89%22%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>We’ve already seen addition, but we can also subtract, multiply and divide.
 However, multiplication and division use symbols that are a little different
 from what you are used to:</p>
@@ -347,7 +345,7 @@ about it like a computer, which is that it is made of letters, one after the oth
 </pre></div>
 </div>
 <p>Now, try the same thing we did with numbers, but with strings:</p>
-<iframe width="700" height="280" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A%23%20Make%20the%20numbers%20add%20to%2015%0A%0Ax%20%3D%20%22Hello%20%22%0Ay%20%3D%20%20%20%23%20Finish%20the%20line%20with%20the%20right%20number%0A%0Aassert%20x%20%2B%20y%20%3D%3D%20%22Hello%20World%22%0Aprint%28%22Yeah%21%20%22%2Bx%2By%2B%22%20%F0%9F%8E%89%22%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="280" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A%23%20Make%20the%20numbers%20add%20to%2015%0A%0Ax%20%3D%20%22Hello%20%22%0Ay%20%3D%20%20%20%23%20Finish%20the%20line%20with%20the%20right%20number%0A%0Aassert%20x%20%2B%20y%20%3D%3D%20%22Hello%20World%22%0Aprint%28%22Yeah%21%20%22%2Bx%2By%2B%22%20%F0%9F%8E%89%22%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>One important things about strings is that you have to surround them with quotes, but
 you can use single or double quotes. The reason is that if you string has one kind of
 quote, it has to be surrounded with the other kind.</p>
@@ -360,7 +358,7 @@ quote, it has to be surrounded with the other kind.</p>
 </pre></div>
 </div>
 <p>This string program doesn’t work! change it so it does.</p>
-<iframe width="700" height="331" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0As1%20%3D%20like%20strings%0As2%20%3D%20these%20letters%20are%20in%20bob%27s%20string%0A%0As3%20%3D%20Bob%20said%20%22I%20really%20like%20strings%22%0As4%20%3D%20Bob%20%27likes%27%20strings%0A%0Aprint%28s1%29%0Aprint%28s2%29%0Aprint%28s3%29%0Aprint%28s4%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="331" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0As1%20%3D%20like%20strings%0As2%20%3D%20these%20letters%20are%20in%20bob%27s%20string%0A%0As3%20%3D%20Bob%20said%20%22I%20really%20like%20strings%22%0As4%20%3D%20Bob%20%27likes%27%20strings%0A%0Aprint%28s1%29%0Aprint%28s2%29%0Aprint%28s3%29%0Aprint%28s4%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>But, sometimes, even using two kinds of strings doesn’t work well, like if you
 have a string that has both kinds of quotes in it, like:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">I</span> <span class="n">can</span><span class="s1">&#39;t decide if I like &quot; or &#39;</span> <span class="n">more</span>
@@ -372,12 +370,12 @@ the quotes quotiness. So you’d type this:</p>
 </pre></div>
 </div>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="turtle-variables">
-<h1>Turtle Variables<a class="headerlink" href="#turtle-variables" title="Link to this heading">¶</a></h1>
+<section id="turtle-variables">
+<h2>Turtle Variables<a class="headerlink" href="#turtle-variables" title="Link to this heading">¶</a></h2>
 <p>We can use variables to store commands for our turtle. Let’s start with a program that we created
 earlier, but update it to use variables.</p>
-<iframe width="700" height="603" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A%0Aimport%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22turtle%22%29%0A%0Aforward%20%3D%20%23%20Amount%20to%20move%20forward%0Aleft%20%3D%20%23%20amount%20to%20turn%20left%0A%0A%0A%23%20In%20the%20lines%20below%2C%20use%20the%20variables%20%0A%23%20instead%20of%20numbers.%20%0A%0Atina.forward%2850%29%0Atina.left%2890%29%0A%0Atina.forward%2850%29%0Atina.left%2890%29%0A%0Atina.forward%2850%29%0Atina.left%2890%29%0A%0Atina.forward%2850%29%0Atina.left%2890%29%0A%0A%23%20Now%2C%20try%20changing%20the%20values%20for%20%0A%23%20forward%20and%20left%20and%20see%20what%20new%20%0A%23%20shapes%20Tina%20draws.%20%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="603" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A%0Aimport%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22turtle%22%29%0A%0Aforward%20%3D%20%23%20Amount%20to%20move%20forward%0Aleft%20%3D%20%23%20amount%20to%20turn%20left%0A%0A%0A%23%20In%20the%20lines%20below%2C%20use%20the%20variables%20%0A%23%20instead%20of%20numbers.%20%0A%0Atina.forward%2850%29%0Atina.left%2890%29%0A%0Atina.forward%2850%29%0Atina.left%2890%29%0A%0Atina.forward%2850%29%0Atina.left%2890%29%0A%0Atina.forward%2850%29%0Atina.left%2890%29%0A%0A%23%20Now%2C%20try%20changing%20the%20values%20for%20%0A%23%20forward%20and%20left%20and%20see%20what%20new%20%0A%23%20shapes%20Tina%20draws.%20%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
+</section>
 </section>
 
         </article>
@@ -415,7 +413,7 @@ earlier, but update it to use variables.</p>
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on Sep 12, 2024 20:51</div>
+              Last updated on Sep 13, 2024 13:56</div>
           </div>
           <div class="right-details">
             
@@ -438,9 +436,9 @@ earlier, but update it to use variables.</p>
             <ul>
 <li><a class="reference internal" href="#">Variables</a><ul>
 <li><a class="reference internal" href="#strings">Strings</a></li>
+<li><a class="reference internal" href="#turtle-variables">Turtle Variables</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#turtle-variables">Turtle Variables</a></li>
 </ul>
 
           </div>
@@ -461,5 +459,6 @@ earlier, but update it to use variables.</p>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/custom.js?v=dec66574"></script>
     </body>
 </html>

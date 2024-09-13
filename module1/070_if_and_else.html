@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=a6f144bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=aee0623b" />
     
     
 
@@ -214,12 +214,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../module0/050_tinas-pen.html">Tina’s Pen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/060_going-in-circles.html">Going in Circles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/070_tinas-grid.html">Tina’s Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module0/080_tinas-secrets.html">Tina’s Secrets</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Remembering and Repeating</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Remembering and Repeating</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="010_var_loop_list.html">Variables Loops and Lists</a></li>
 <li class="toctree-l2"><a class="reference internal" href="020_variables.html">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="020_variables.html#turtle-variables">Turtle Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="030_loops.html">Loops for Easy Squares</a></li>
 <li class="toctree-l2"><a class="reference internal" href="040_functions.html">Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="050_crazy_shapes.html">Crazy Shapes</a></li>
@@ -235,10 +235,8 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../module3/index.html">Lists Strings and Iterables</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Lists Strings and Iterables</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../module3/adv_loops.html">Advanced Loops</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/more_lists.html">Iterating over Iterables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/more_lists.html#show-us-your-lists">Show Us Your Lists!</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../module3/reading_pi.html">Reciting Pi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/yet_more_lists.html">Unpacking Tuples</a></li>
 </ul>
 </li>
@@ -288,10 +286,10 @@
 <p>All programming languages have a way of making choices, doing one thing or
 the other. In Python we can make choices with <code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">elif</span></code> and <code class="docutils literal notranslate"><span class="pre">else</span></code>. Here is
 a simple program to tell you if a number is bigger than 10:</p>
-<iframe width="700" height="399" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A%0Awhile%20True%3A%20%23%20This%20loop%20will%20run%20until%20the%20%27break%27%0A%0A%20%20%20%20num%20%3D%20input%28%22Enter%20a%20number%3A%22%29%0A%20%20%20%20num%20%3D%20int%28num%29%20%23%20Make%20the%20input%20an%20integer%0A%0A%20%20%20%20if%20num%20%3D%3D%200%3A%0A%20%20%20%20%20%20%20%20break%20%23%20Exit%20the%20loop%20if%20the%20number%20is%200%0A%20%20%20%20%0A%20%20%20%20if%20num%20%3E%2010%3A%0A%20%20%20%20%20%20%20%20print%28%22It%27s%20big%21%22%29%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20print%28%22It%27s%20small%22%29%0A%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="399" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A%0Awhile%20True%3A%20%23%20This%20loop%20will%20run%20until%20the%20%27break%27%0A%0A%20%20%20%20num%20%3D%20input%28%22Enter%20a%20number%3A%22%29%0A%20%20%20%20num%20%3D%20int%28num%29%20%23%20Make%20the%20input%20an%20integer%0A%0A%20%20%20%20if%20num%20%3D%3D%200%3A%0A%20%20%20%20%20%20%20%20break%20%23%20Exit%20the%20loop%20if%20the%20number%20is%200%0A%20%20%20%20%0A%20%20%20%20if%20num%20%3E%2010%3A%0A%20%20%20%20%20%20%20%20print%28%22It%27s%20big%21%22%29%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20print%28%22It%27s%20small%22%29%0A%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Let’s use the if statement to write a program to greet your friend. You might
 want to look at earlier programs for clues</p>
-<iframe width="700" height="416" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A%23%20Make%20a%20list%20of%20your%20friends%2C%20by%20adding%20%0A%23%20on%20to%20this%20starter%20list%0A%0Afriends%20%3D%20%5B%20%27friend1%27%2C%27friend2%27%5D%0A%0A%23%20Ask%20the%20user%27s%20name%0Aname%20%3D%20...%0A%0A%23%20Write%20a%20loop%20that%20iterates%20over%20all%20of%20your%20%0A%23%20friends%2C%20and%20if%20the%20user%27s%20name%20is%20the%20same%20%0A%23%20as%20a%20friends%20name%2C%20print%20%22Hello%20Friend%22%0A%0Afor%20friend%20in%20...%20%3A%0A%20%20%20%20...%0A%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="416" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A%23%20Make%20a%20list%20of%20your%20friends%2C%20by%20adding%20%0A%23%20on%20to%20this%20starter%20list%0A%0Afriends%20%3D%20%5B%20%27friend1%27%2C%27friend2%27%5D%0A%0A%23%20Ask%20the%20user%27s%20name%0Aname%20%3D%20...%0A%0A%23%20Write%20a%20loop%20that%20iterates%20over%20all%20of%20your%20%0A%23%20friends%2C%20and%20if%20the%20user%27s%20name%20is%20the%20same%20%0A%23%20as%20a%20friends%20name%2C%20print%20%22Hello%20Friend%22%0A%0Afor%20friend%20in%20...%20%3A%0A%20%20%20%20...%0A%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 </section>
 
         </article>
@@ -329,7 +327,7 @@ want to look at earlier programs for clues</p>
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on Sep 12, 2024 20:51</div>
+              Last updated on Sep 13, 2024 13:56</div>
           </div>
           <div class="right-details">
             
@@ -355,5 +353,6 @@ want to look at earlier programs for clues</p>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/custom.js?v=dec66574"></script>
     </body>
 </html>

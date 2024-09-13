@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=a6f144bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=aee0623b" />
     
     
 
@@ -214,12 +214,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../module0/050_tinas-pen.html">Tina’s Pen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/060_going-in-circles.html">Going in Circles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/070_tinas-grid.html">Tina’s Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module0/080_tinas-secrets.html">Tina’s Secrets</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Remembering and Repeating</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Remembering and Repeating</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="010_var_loop_list.html">Variables Loops and Lists</a></li>
 <li class="toctree-l2"><a class="reference internal" href="020_variables.html">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="020_variables.html#turtle-variables">Turtle Variables</a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Loops for Easy Squares</a></li>
 <li class="toctree-l2"><a class="reference internal" href="040_functions.html">Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="050_crazy_shapes.html">Crazy Shapes</a></li>
@@ -235,10 +235,8 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../module3/index.html">Lists Strings and Iterables</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Lists Strings and Iterables</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../module3/adv_loops.html">Advanced Loops</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/more_lists.html">Iterating over Iterables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/more_lists.html#show-us-your-lists">Show Us Your Lists!</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../module3/reading_pi.html">Reciting Pi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/yet_more_lists.html">Unpacking Tuples</a></li>
 </ul>
 </li>
@@ -312,7 +310,7 @@ program shorter by getting rid of the repetition? Yes, we can, with loops.  A
 loop is a bit of code that causes the computer to do something multiple
 times. Here is a loop for printing “Hello!” mutiple times. How many times do
 you think it will print?</p>
-<iframe width="700" height="229" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0Afor%20i%20in%20range%284%29%3A%0A%20%20%20%20print%28%22Hello%21%22%29%0A%0A%23%20Now%20change%20the%20program%20to%20make%20%0A%23%20it%20print%20hello%206%20times.%20%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="229" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0Afor%20i%20in%20range%284%29%3A%0A%20%20%20%20print%28%22Hello%21%22%29%0A%0A%23%20Now%20change%20the%20program%20to%20make%20%0A%23%20it%20print%20hello%206%20times.%20%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Let’s look at that in more detail:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello!&quot;</span><span class="p">)</span>
@@ -331,7 +329,7 @@ parenthesis, in this case 4.</p>
 <h2>Make a Better Square.<a class="headerlink" href="#make-a-better-square" title="Link to this heading">¶</a></h2>
 <p>Here is our way of solving the square exercise. Can you edit this
 program to make it much better, by replacing the repetition with a loop?</p>
-<iframe width="700" height="433" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22turtle%22%29%0A%0Aforward%20%3D%2050%0Aleft%20%3D%2090%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="433" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22turtle%22%29%0A%0Aforward%20%3D%2050%0Aleft%20%3D%2090%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Once you have used a loop to help Tony make a square, try making other shapes,
 like a triangle, a pentagon, or a hexagon, or maybe even a … hendecagon.
 (if you can figure out what that is. )</p>
@@ -351,7 +349,7 @@ A Snake!!!
 </pre></div>
 </div>
 <p>Or maybe: 🦡🦡🦡🦡🦡🦡🦡🦡🦡🦡🦡🦡🍄🍄 🦡🦡🦡🦡🦡🦡🦡🦡🦡🦡🦡🦡🍄🍄 🐍</p>
-<iframe width="700" height="600" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="600" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 </section>
 <section id="more-about-range">
 <h2>More about range<a class="headerlink" href="#more-about-range" title="Link to this heading">¶</a></h2>
@@ -365,11 +363,11 @@ out the numbers 4, 5, 6, 7, you would use <code class="docutils literal notransl
 </div>
 <p>Try that yourself. Write a program to print “Hello” next to all of the
 numbers from 10 to 20:</p>
-<iframe width="700" height="212" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%23%20Change%20me%20to%20print%20Hello%20for%20the%20%0A%23%20numbers%20from%2010%20to%2020%0A%0Afor%20i%20in%20range%284%29%3A%0A%20%20%20%20print%28%22Hello%21%22%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="212" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%23%20Change%20me%20to%20print%20Hello%20for%20the%20%0A%23%20numbers%20from%2010%20to%2020%0A%0Afor%20i%20in%20range%284%29%3A%0A%20%20%20%20print%28%22Hello%21%22%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>But there are more interesting things about <code class="docutils literal notranslate"><span class="pre">range()</span></code>: It can take a <em>third</em>
 number, and all three of the numbers can be negative or positive. So you
 could also type <code class="docutils literal notranslate"><span class="pre">range(10,20,</span> <span class="pre">2)</span></code> or <code class="docutils literal notranslate"><span class="pre">range(20,10,-1)</span></code>. Let’s explore <code class="docutils literal notranslate"><span class="pre">range</span> <span class="pre">()</span></code> to figure out what the third number does.</p>
-<iframe width="700" height="348" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A%23%20Change%20me%20so%20range%28%29%20has%20three%20numbers%2C%20%0A%23%20and%20try%20to%20figure%20out%20what%20the%20third%0A%23%20number%20does.%20What%20happens%20if%20you%20make%20%0A%23%20some%20of%20the%20numbers%20negative%3F%0A%0A%23%20HINT%3A%20If%20the%20third%20number%20is%20negative%2C%20%0A%23%20the%20first%20number%20should%20be%20%2Abigger%2A%20than%0A%23%20the%20second%2C%20but%20if%20the%20third%20number%20is%20positive%2C%20%0A%23%20it%20should%20be%20smaller.%20%0A%0Afor%20i%20in%20range%2810%29%3A%0A%20%20%20%20print%28%22Hello%21%22%2C%20i%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="348" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A%23%20Change%20me%20so%20range%28%29%20has%20three%20numbers%2C%20%0A%23%20and%20try%20to%20figure%20out%20what%20the%20third%0A%23%20number%20does.%20What%20happens%20if%20you%20make%20%0A%23%20some%20of%20the%20numbers%20negative%3F%0A%0A%23%20HINT%3A%20If%20the%20third%20number%20is%20negative%2C%20%0A%23%20the%20first%20number%20should%20be%20%2Abigger%2A%20than%0A%23%20the%20second%2C%20but%20if%20the%20third%20number%20is%20positive%2C%20%0A%23%20it%20should%20be%20smaller.%20%0A%0Afor%20i%20in%20range%2810%29%3A%0A%20%20%20%20print%28%22Hello%21%22%2C%20i%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 </section>
 </section>
 
@@ -408,7 +406,7 @@ could also type <code class="docutils literal notranslate"><span class="pre">ran
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on Sep 12, 2024 20:51</div>
+              Last updated on Sep 13, 2024 13:56</div>
           </div>
           <div class="right-details">
             
@@ -455,5 +453,6 @@ could also type <code class="docutils literal notranslate"><span class="pre">ran
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/custom.js?v=dec66574"></script>
     </body>
 </html>

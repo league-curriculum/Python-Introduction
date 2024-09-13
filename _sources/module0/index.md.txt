@@ -16,6 +16,7 @@ or by clicking on the "Next" button at the botom-right of the page.  )
 050_tinas-pen.md
 060_going-in-circles.md
 070_tinas-grid.md
+080_tinas-secrets.md
 
 ```
 

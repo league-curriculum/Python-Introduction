@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=a6f144bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=aee0623b" />
     
     
 
@@ -214,12 +214,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../module0/050_tinas-pen.html">Tina’s Pen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/060_going-in-circles.html">Going in Circles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/070_tinas-grid.html">Tina’s Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module0/080_tinas-secrets.html">Tina’s Secrets</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Remembering and Repeating</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Remembering and Repeating</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="010_var_loop_list.html">Variables Loops and Lists</a></li>
 <li class="toctree-l2"><a class="reference internal" href="020_variables.html">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="020_variables.html#turtle-variables">Turtle Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="030_loops.html">Loops for Easy Squares</a></li>
 <li class="toctree-l2"><a class="reference internal" href="040_functions.html">Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="050_crazy_shapes.html">Crazy Shapes</a></li>
@@ -235,10 +235,8 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../module3/index.html">Lists Strings and Iterables</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Lists Strings and Iterables</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../module3/adv_loops.html">Advanced Loops</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/more_lists.html">Iterating over Iterables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/more_lists.html#show-us-your-lists">Show Us Your Lists!</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../module3/reading_pi.html">Reciting Pi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/yet_more_lists.html">Unpacking Tuples</a></li>
 </ul>
 </li>
@@ -310,16 +308,16 @@ you wanted to get <code class="docutils literal notranslate"><span class="pre">a
 <p>Another important thing about lists is you can <em>iterate</em> them, which means ‘do
 something repeatedly’. Here is how we would print out all of the items in the
 list:</p>
-<iframe width="700" height="195" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=things_to_buy%20%3D%20%5B%20%27apples%27%2C%27oranges%27%2C%27bread%27%2C%27milk%27%5D%0A%0Afor%20item%20in%20things_to_buy%3A%0A%20%20%20%20print%28item%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="195" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=things_to_buy%20%3D%20%5B%20%27apples%27%2C%27oranges%27%2C%27bread%27%2C%27milk%27%5D%0A%0Afor%20item%20in%20things_to_buy%3A%0A%20%20%20%20print%28item%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Loops and lists could be very useful for our turtle programs. For instance, we could make a square with
 a different color on each side:</p>
-<iframe width="700" height="348" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22turtle%22%29%0A%0Aforward%20%3D%2050%0Aleft%20%3D%2090%0Acolors%20%3D%20%5B%20%27red%27%2C%20%27blue%27%2C%20%27black%27%2C%20%27orange%27%5D%0A%0Afor%20color%20in%20colors%3A%0A%20%20%20%20tina.color%28color%29%0A%20%20%20%20tina.forward%28forward%29%0A%20%20%20%20tina.left%28left%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="348" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22turtle%22%29%0A%0Aforward%20%3D%2050%0Aleft%20%3D%2090%0Acolors%20%3D%20%5B%20%27red%27%2C%20%27blue%27%2C%20%27black%27%2C%20%27orange%27%5D%0A%0Afor%20color%20in%20colors%3A%0A%20%20%20%20tina.color%28color%29%0A%20%20%20%20tina.forward%28forward%29%0A%20%20%20%20tina.left%28left%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Or, we could change the angle that tina turns:</p>
-<iframe width="700" height="297" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22turtle%22%29%0A%0Aforward%20%3D%2050%0A%0Afor%20left%20in%20%5B%2045%2C%2060%2C%2090%2C%2045%2C%20-90%2C%2060%2C%2022%20%2C%20-45%2C%2090%5D%3A%0A%20%20%20%20tina.forward%28forward%29%0A%20%20%20%20tina.left%28left%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="297" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22turtle%22%29%0A%0Aforward%20%3D%2050%0A%0Afor%20left%20in%20%5B%2045%2C%2060%2C%2090%2C%2045%2C%20-90%2C%2060%2C%2022%20%2C%20-45%2C%2090%5D%3A%0A%20%20%20%20tina.forward%28forward%29%0A%20%20%20%20tina.left%28left%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Here is a way that we could change two variables at once, using array indexes:</p>
-<iframe width="700" height="399" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22turtle%22%29%0A%0Aforward%20%3D%2050%0Alefts%20%3D%20%5B%2045%2C%20-60%2C%2090%2C%2045%2C%20-90%2C%2060%2C%2022%20%2C%20-45%20%5D%0Acolors%20%3D%20%5B%20%27red%27%2C%20%27blue%27%2C%20%27black%27%2C%20%27orange%27%2C%20%27red%27%2C%20%27blue%27%2C%20%27black%27%2C%20%27orange%27%5D%0A%0Afor%20%20i%20in%20range%288%29%3A%0A%20%20%20%20left%20%3D%20lefts%5Bi%5D%0A%20%20%20%20color%20%3D%20colors%5Bi%5D%0A%0A%20%20%20%20tina.color%28color%29%0A%20%20%20%20tina.forward%28forward%29%0A%20%20%20%20tina.left%28left%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="399" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22turtle%22%29%0A%0Aforward%20%3D%2050%0Alefts%20%3D%20%5B%2045%2C%20-60%2C%2090%2C%2045%2C%20-90%2C%2060%2C%2022%20%2C%20-45%20%5D%0Acolors%20%3D%20%5B%20%27red%27%2C%20%27blue%27%2C%20%27black%27%2C%20%27orange%27%2C%20%27red%27%2C%20%27blue%27%2C%20%27black%27%2C%20%27orange%27%5D%0A%0Afor%20%20i%20in%20range%288%29%3A%0A%20%20%20%20left%20%3D%20lefts%5Bi%5D%0A%20%20%20%20color%20%3D%20colors%5Bi%5D%0A%0A%20%20%20%20tina.color%28color%29%0A%20%20%20%20tina.forward%28forward%29%0A%20%20%20%20tina.left%28left%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Now, write your own crazy program. You can copy and change the programs we’ve done previously.</p>
-<iframe width="700" height="600" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22turtle%22%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="600" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22turtle%22%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 </section>
 
         </article>
@@ -357,7 +355,7 @@ a different color on each side:</p>
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on Sep 12, 2024 20:51</div>
+              Last updated on Sep 13, 2024 13:56</div>
           </div>
           <div class="right-details">
             
@@ -383,5 +381,6 @@ a different color on each side:</p>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/custom.js?v=dec66574"></script>
     </body>
 </html>

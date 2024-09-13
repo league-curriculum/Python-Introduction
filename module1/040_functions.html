@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=a6f144bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=aee0623b" />
     
     
 
@@ -214,12 +214,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../module0/050_tinas-pen.html">Tina’s Pen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/060_going-in-circles.html">Going in Circles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/070_tinas-grid.html">Tina’s Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module0/080_tinas-secrets.html">Tina’s Secrets</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Remembering and Repeating</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Remembering and Repeating</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="010_var_loop_list.html">Variables Loops and Lists</a></li>
 <li class="toctree-l2"><a class="reference internal" href="020_variables.html">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="020_variables.html#turtle-variables">Turtle Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="030_loops.html">Loops for Easy Squares</a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="050_crazy_shapes.html">Crazy Shapes</a></li>
@@ -235,10 +235,8 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../module3/index.html">Lists Strings and Iterables</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Lists Strings and Iterables</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../module3/adv_loops.html">Advanced Loops</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/more_lists.html">Iterating over Iterables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/more_lists.html#show-us-your-lists">Show Us Your Lists!</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../module3/reading_pi.html">Reciting Pi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module3/yet_more_lists.html">Unpacking Tuples</a></li>
 </ul>
 </li>
@@ -330,12 +328,12 @@ part of the first program we made:</p>
 </pre></div>
 </div>
 <p>Try running this program and see what you get.</p>
-<iframe width="700" height="229" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=def%20add%28a%2C%20b%29%3A%0A%09c%20%3D%20a%20%2B%20b%0A%09return%20c%0A%0Aprint%28add%2810%2C20%29%29%0Aprint%28add%285%2C6%29%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="229" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=def%20add%28a%2C%20b%29%3A%0A%09c%20%3D%20a%20%2B%20b%0A%09return%20c%0A%0Aprint%28add%2810%2C20%29%29%0Aprint%28add%285%2C6%29%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Now re-write the program to multiply the two numbers.</p>
-<iframe width="700" height="263" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%23%20Change%20me%20to%20multiply%21%20Be%20sure%20to%20change%20the%0A%23%20name%20of%20the%20function.%20%0Adef%20add%28a%2C%20b%29%3A%0A%09c%20%3D%20a%20%2B%20b%0A%09return%20c%0A%0Aprint%28add%2810%2C20%29%29%0Aprint%28add%285%2C6%29%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="263" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%23%20Change%20me%20to%20multiply%21%20Be%20sure%20to%20change%20the%0A%23%20name%20of%20the%20function.%20%0Adef%20add%28a%2C%20b%29%3A%0A%09c%20%3D%20a%20%2B%20b%0A%09return%20c%0A%0Aprint%28add%2810%2C20%29%29%0Aprint%28add%285%2C6%29%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>You can have a different number of arguments for the input to the function.
 Re-write it again to multiply three numbers.</p>
-<iframe width="700" height="280" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%23%20Change%20me%20to%20multiply%2C%20and%20make%20it%20multiply%20three%20numbers%21%0A%23%20Be%20sure%20to%20change%20the%20name%20of%20the%20function.%20%0Adef%20add%28a%2C%20b%29%3A%0A%09c%20%3D%20a%20%2B%20b%0A%09return%20c%0A%0Aprint%28add%2810%2C20%29%29%0Aprint%28add%285%2C6%29%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="280" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%23%20Change%20me%20to%20multiply%2C%20and%20make%20it%20multiply%20three%20numbers%21%0A%23%20Be%20sure%20to%20change%20the%20name%20of%20the%20function.%20%0Adef%20add%28a%2C%20b%29%3A%0A%09c%20%3D%20a%20%2B%20b%0A%09return%20c%0A%0Aprint%28add%2810%2C20%29%29%0Aprint%28add%285%2C6%29%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <section id="make-five-cakes">
 <h2>Make Five Cakes<a class="headerlink" href="#make-five-cakes" title="Link to this heading">¶</a></h2>
 <p>Earlier we talked about how <strong>functions are like recipes</strong>. In this exercise,
@@ -343,7 +341,7 @@ we’ve already taught Tina the recipe for making a picture of a cake and she’
 made three.  Tell her to make more cakes by <strong>calling</strong> the function with
 different <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> locations at the very bottom of the program.</p>
 <p>How many cakes should she make?</p>
-<iframe width="700" height="620" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%3Dturtle.Turtle%28%29%0Atina.shape%28%27turtle%27%29%0A%0Adef%20make_cake%28x%3D0%2C%20y%3D0%29%3A%0A%20%20%20%20tina.penup%28%29%0A%20%20%20%20tina.color%28%27pink%27%29%0A%20%20%20%20tina.goto%28x%2C%20y%29%0A%20%20%20%20tina.pendown%28%29%0A%20%20%20%20tina.begin_fill%28%29%0A%20%20%20%20tina.goto%28x%20%2B%2020%2C%20y%29%0A%20%20%20%20tina.goto%28x%20%2B%2020%2C%20y%20%2B%2020%29%0A%20%20%20%20tina.goto%28x%20-%2020%2C%20y%20%2B%2020%29%0A%20%20%20%20tina.goto%28x%20-%2020%2C%20y%29%0A%20%20%20%20tina.goto%28x%2C%20y%29%20%20%0A%20%20%20%20tina.end_fill%28%29%0A%20%20%20%20tina.goto%28x%2C%20y%20%2B%2020%29%0A%20%20%20%20tina.color%28%27yellow%27%29%0A%20%20%20%20tina.goto%28x%2C%20y%20%2B%2035%29%0A%20%20%20%20tina.goto%28x%2C%20y%20%2B%2030%29%0A%20%20%20%20tina.color%28%27black%27%29%0A%20%20%20%20tina.goto%28x%2C%20y%20%2B%2020%29%0A%20%20%20%20tina.penup%28%29%0A%20%20%20%20tina.goto%28x%2C%20y%20%2B%2010%29%0A%20%20%20%20%0Amake_cake%280%2C0%29%0Amake_cake%28-100%2C0%29%0Amake_cake%28100%2C0%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="620" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%3Dturtle.Turtle%28%29%0Atina.shape%28%27turtle%27%29%0A%0Adef%20make_cake%28x%3D0%2C%20y%3D0%29%3A%0A%20%20%20%20tina.penup%28%29%0A%20%20%20%20tina.color%28%27pink%27%29%0A%20%20%20%20tina.goto%28x%2C%20y%29%0A%20%20%20%20tina.pendown%28%29%0A%20%20%20%20tina.begin_fill%28%29%0A%20%20%20%20tina.goto%28x%20%2B%2020%2C%20y%29%0A%20%20%20%20tina.goto%28x%20%2B%2020%2C%20y%20%2B%2020%29%0A%20%20%20%20tina.goto%28x%20-%2020%2C%20y%20%2B%2020%29%0A%20%20%20%20tina.goto%28x%20-%2020%2C%20y%29%0A%20%20%20%20tina.goto%28x%2C%20y%29%20%20%0A%20%20%20%20tina.end_fill%28%29%0A%20%20%20%20tina.goto%28x%2C%20y%20%2B%2020%29%0A%20%20%20%20tina.color%28%27yellow%27%29%0A%20%20%20%20tina.goto%28x%2C%20y%20%2B%2035%29%0A%20%20%20%20tina.goto%28x%2C%20y%20%2B%2030%29%0A%20%20%20%20tina.color%28%27black%27%29%0A%20%20%20%20tina.goto%28x%2C%20y%20%2B%2020%29%0A%20%20%20%20tina.penup%28%29%0A%20%20%20%20tina.goto%28x%2C%20y%20%2B%2010%29%0A%20%20%20%20%0Amake_cake%280%2C0%29%0Amake_cake%28-100%2C0%29%0Amake_cake%28100%2C0%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Hint: The first number in <code class="docutils literal notranslate"><span class="pre">make_cake()</span></code> is <strong>how far left or right</strong> Tina should go, while the second is <strong>how high or low</strong> she should go before starting to draw.</p>
 <p>Run this program, then change the program how ever you want. Some things you can try:</p>
 <ul class="simple">
@@ -358,7 +356,7 @@ different <code class="docutils literal notranslate"><span class="pre">x</span><
 <p>Let’s update a square function one more time. This time remove the redundancy in
 the program with a loop, but also use a function; your loop should run a
 function many times, and the function should draw part of the square.</p>
-<iframe width="700" height="586" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22turtle%22%29%0A%0Aforward%20%3D%2050%0Aleft%20%3D%2090%0A%0A%23%20First%2C%20write%20a%20function%20that%20performs%0A%23%20the%20important%20part%20of%20the%20code%20below.%20%0A%23%20Be%20sure%20to%20include%20the%20correct%20arguments%0A%23%20for%20the%20variables.%20%0A%0A%23%20Second%2C%20call%20that%20function%20from%20a%20loop%0A%23%20to%20do%20it%20the%20right%20number%20of%20times.%20%0A%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="586" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=import%20turtle%0Atina%20%3D%20turtle.Turtle%28%29%0Atina.shape%28%22turtle%22%29%0A%0Aforward%20%3D%2050%0Aleft%20%3D%2090%0A%0A%23%20First%2C%20write%20a%20function%20that%20performs%0A%23%20the%20important%20part%20of%20the%20code%20below.%20%0A%23%20Be%20sure%20to%20include%20the%20correct%20arguments%0A%23%20for%20the%20variables.%20%0A%0A%23%20Second%2C%20call%20that%20function%20from%20a%20loop%0A%23%20to%20do%20it%20the%20right%20number%20of%20times.%20%0A%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A%0Atina.forward%28forward%29%0Atina.left%28left%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>When your program is correctly drawing a square, try changing the
 variable to see what other shapes you can make.</p>
 <hr class="docutils" />
@@ -402,7 +400,7 @@ variable to see what other shapes you can make.</p>
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on Sep 12, 2024 20:51</div>
+              Last updated on Sep 13, 2024 13:56</div>
           </div>
           <div class="right-details">
             
@@ -448,5 +446,6 @@ variable to see what other shapes you can make.</p>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/custom.js?v=dec66574"></script>
     </body>
 </html>

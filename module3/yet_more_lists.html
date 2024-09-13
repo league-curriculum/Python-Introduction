@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Final Project" href="../final_project.html" /><link rel="prev" title="Reciting Pi" href="reading_pi.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Final Project" href="../final_project.html" /><link rel="prev" title="Iterating over Iterables" href="more_lists.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2024.08.06 -->
         <title>Unpacking Tuples - Introduction to Python</title>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=a6f144bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=aee0623b" />
     
     
 
@@ -214,12 +214,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../module0/050_tinas-pen.html">Tina’s Pen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/060_going-in-circles.html">Going in Circles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module0/070_tinas-grid.html">Tina’s Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module0/080_tinas-secrets.html">Tina’s Secrets</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../module1/index.html">Remembering and Repeating</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Remembering and Repeating</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../module1/010_var_loop_list.html">Variables Loops and Lists</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module1/020_variables.html">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../module1/020_variables.html#turtle-variables">Turtle Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module1/030_loops.html">Loops for Easy Squares</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module1/040_functions.html">Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../module1/050_crazy_shapes.html">Crazy Shapes</a></li>
@@ -235,10 +235,8 @@
 </ul>
 </li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Lists Strings and Iterables</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Lists Strings and Iterables</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="adv_loops.html">Advanced Loops</a></li>
 <li class="toctree-l2"><a class="reference internal" href="more_lists.html">Iterating over Iterables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="more_lists.html#show-us-your-lists">Show Us Your Lists!</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reading_pi.html">Reciting Pi</a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Unpacking Tuples</a></li>
 </ul>
 </li>
@@ -305,28 +303,28 @@ variables at once!</p>
 unlike a list, you can’t change it once it is created. Tuples are created by
 putting commas between things, and you can put parentheses around it to make
 it more clear. So these are all tuples:</p>
-<iframe width="700" height="297" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0At1%20%3D%201%2C2%2C3%0Aprint%28t1%29%0A%0At2%20%3D%20%281%2C2%2C3%29%0Aprint%28t2%29%0A%0A%23%20A%20tuple%20with%20one%20item%21%0At3%20%3D%206%2C%20%0Aprint%28t3%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="297" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0At1%20%3D%201%2C2%2C3%0Aprint%28t1%29%0A%0At2%20%3D%20%281%2C2%2C3%29%0Aprint%28t2%29%0A%0A%23%20A%20tuple%20with%20one%20item%21%0At3%20%3D%206%2C%20%0Aprint%28t3%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>You can assign one tuple to another, but (mostly) they have to be the same
 size. ( they can be different sizes but we’ll save that for later. )</p>
-<iframe width="700" height="246" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=t1%20%3D%201%2C2%2C3%0Aprint%28t1%29%0Ax%2Cy%2Cz%20%3D%20t1%0Aprint%28x%29%0Aprint%28y%29%0Aprint%28z%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="246" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=t1%20%3D%201%2C2%2C3%0Aprint%28t1%29%0Ax%2Cy%2Cz%20%3D%20t1%0Aprint%28x%29%0Aprint%28y%29%0Aprint%28z%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>But the code below would be an error, because on the left side, the tuple has three
 elements, but there are only two on the left.</p>
-<iframe width="700" height="246" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=t1%20%3D%201%2C2%2C3%0Aprint%28t1%29%0A%0Ax%2Cy%20%3D%20t1%0Aprint%28x%29%0Aprint%28y%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="246" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=t1%20%3D%201%2C2%2C3%0Aprint%28t1%29%0A%0Ax%2Cy%20%3D%20t1%0Aprint%28x%29%0Aprint%28y%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Now that you know about tuples, you will see them in a lot of places in Python programs.</p>
 <section id="zip-and-enumerate">
 <h2>Zip and Enumerate<a class="headerlink" href="#zip-and-enumerate" title="Link to this heading">¶</a></h2>
 <p>The really important part about tuples is when they are used in two important
 functions, <code class="docutils literal notranslate"><span class="pre">enumerate()</span></code> and <code class="docutils literal notranslate"><span class="pre">zip()</span></code></p>
 <p>Enumerate means “to count out, one by one”, and the <code class="docutils literal notranslate"><span class="pre">enumerate()</span></code> function will count things for us. Here is how we use it:</p>
-<iframe width="700" height="229" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0Al%20%3D%20%5B%27zero%27%2C%20%27one%27%2C%20%27two%27%2C%20%27three%27%2C%27%20four%27%5D%0A%0A%0Afor%20e%20in%20enumerate%28l%29%3A%0A%20%20%20%20print%28e%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="229" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0Al%20%3D%20%5B%27zero%27%2C%20%27one%27%2C%20%27two%27%2C%20%27three%27%2C%27%20four%27%5D%0A%0A%0Afor%20e%20in%20enumerate%28l%29%3A%0A%20%20%20%20print%28e%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Hmmm … it looks like it printed out tuples! In each tuple, the first element
 is the number, and the second is the item. But, we know that we can unpack
 tuples, so we could also write:</p>
-<iframe width="700" height="229" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0Al%20%3D%20%5B%27zero%27%2C%20%27one%27%2C%20%27two%27%2C%20%27three%27%2C%27%20four%27%5D%0A%0A%23%20change%20%27e%27%20to%20numnber%2C%20item%0Afor%20number%2C%20item%20in%20enumerate%28l%29%3A%20%0A%20%20%20%20print%28str%28number%29%20%2B%20%22%20%22%20%2B%20str%28item%29%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="229" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0Al%20%3D%20%5B%27zero%27%2C%20%27one%27%2C%20%27two%27%2C%20%27three%27%2C%27%20four%27%5D%0A%0A%23%20change%20%27e%27%20to%20numnber%2C%20item%0Afor%20number%2C%20item%20in%20enumerate%28l%29%3A%20%0A%20%20%20%20print%28str%28number%29%20%2B%20%22%20%22%20%2B%20str%28item%29%29%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>Enumerate is a very powerful way to count the things that we are iterating over.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">zip()</span></code> function is another very important function. Zip takes one or more
 iterables, like strings, lists and tuples, and returns a tupe with the first one from each, then the second, then the third.</p>
-<iframe width="700" height="348" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0Al%20%3D%20%5B%27one%27%2C%20%27two%27%2C%20%27three%27%2C%20%27four%27%2C%20%27five%27%5D%0At%20%3D%20%28%27uno%27%2C%20%27dos%27%2C%20%27tres%27%2C%20%27cuatro%27%2C%20%27cinco%27%29%0As%20%3D%20%2212345%22%0A%0Afor%20e%20in%20zip%28l%2C%20t%2C%20s%29%3A%0A%20%20%20%20print%28e%29%0A%0A%23%20or%2C%20Unpack%21%0Aprint%28%22%22%29%0Afor%20a%2C%20b%2C%20c%20in%20zip%28l%2C%20t%2C%20s%29%3A%0A%20%20%20%20print%28str%28a%29%20%2B%20%22%20%22%20%2B%20str%28b%29%20%2B%20%22%20%22%20%2Bstr%28c%29%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="348" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0Al%20%3D%20%5B%27one%27%2C%20%27two%27%2C%20%27three%27%2C%20%27four%27%2C%20%27five%27%5D%0At%20%3D%20%28%27uno%27%2C%20%27dos%27%2C%20%27tres%27%2C%20%27cuatro%27%2C%20%27cinco%27%29%0As%20%3D%20%2212345%22%0A%0Afor%20e%20in%20zip%28l%2C%20t%2C%20s%29%3A%0A%20%20%20%20print%28e%29%0A%0A%23%20or%2C%20Unpack%21%0Aprint%28%22%22%29%0Afor%20a%2C%20b%2C%20c%20in%20zip%28l%2C%20t%2C%20s%29%3A%0A%20%20%20%20print%28str%28a%29%20%2B%20%22%20%22%20%2B%20str%28b%29%20%2B%20%22%20%22%20%2Bstr%28c%29%29%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <p>As you can see, the first tuple is the first item from each of the iterables.
 The second tuple is the second item from all of the tuples, etc.</p>
 </section>
@@ -340,7 +338,7 @@ The second tuple is the second item from all of the tuples, etc.</p>
 </ul>
 <p>Zip all of the lists together, then unpack them in a loop, and call a function
 with the values that makes your turtle change color, turn, and move.</p>
-<iframe width="700" height="600" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="iframe-container"><iframe width="700" height="600" src="https://trinket.io/tools/1.0/jekyll/embed/python#code=%0A%0A" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 <div class="details docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
 <span class="n">turtle</span> <span class="o">=</span> <span class="o">...</span>
@@ -380,14 +378,14 @@ with the values that makes your turtle change color, turn, and move.</p>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="reading_pi.html">
+          <a class="prev-page" href="more_lists.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Reciting Pi</div>
+                <div class="title">Iterating over Iterables</div>
                 
               </div>
             </a>
@@ -401,7 +399,7 @@ with the values that makes your turtle change color, turn, and move.</p>
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on Sep 12, 2024 20:51</div>
+              Last updated on Sep 13, 2024 13:56</div>
           </div>
           <div class="right-details">
             
@@ -447,5 +445,6 @@ with the values that makes your turtle change color, turn, and move.</p>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/custom.js?v=dec66574"></script>
     </body>
 </html>
