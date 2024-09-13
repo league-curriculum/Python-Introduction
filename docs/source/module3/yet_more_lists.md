@@ -138,7 +138,7 @@ Write a program that has three lists or tuples that have commands for your turtl
 Zip all of the lists together, then unpack them in a loop, and call a function
 with the values that makes your turtle change color, turn, and move. 
 
-```python.run:height='600'
+```python.run:height=600
 
 
 ```

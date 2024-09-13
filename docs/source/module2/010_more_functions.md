@@ -169,7 +169,7 @@ each of these things:
 One of your functions should have a default parameter. 
 
 
-```python.run:height='600'
+```python.run:height=600
 
 # Function to Ask the user to enter the user's 
 # name,  using `input()`. If the user enters

@@ -141,7 +141,7 @@ this, but with real names: `'foo bar baz'`. Split the list into a string.
 * Print out each name on a seperate line. 
 
 
-```python.run:height='600'
+```python.run:height=600
 
 ```
 

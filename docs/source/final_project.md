@@ -5,7 +5,6 @@ that a programmer can learn:
 
 <p style="text-align: center; font-size: 40px; font-weight: bold; color: red; font-family: 'Comic Sans MS', cursive, sans-serif;">Read The Documentation!</p>
 
-
 We've been using the Python turtle for all this time, but we haven't read the documentation yet! 
 
 So, for this project, you are going to get to read the documentation to write a new program
@@ -20,18 +19,23 @@ Your assignment for this project to make a turtle program that draws something, 
 
 You should also try to include an `if/else` in your program, and ask for input with `input()`
 
-
 But first, visit the [Python Turtle Library Documentation](https://docs.python.org/3/library/turtle.html)
 to see if there is anything you'd like to try. You should especially look at [The Graphics Methods](https://docs.python.org/3/library/turtle.html#turtle-graphics-reference) to see if there are any functions that look interesting, like `stamp()`.
 
 
-```python.run:height=800
+Note! This editor is set to be larger than the others, so you can seem more of
+your code. You will probably want to use the Fullscreen options to see more of
+your code at once. ( Click on the three bars menu in the upper right corner of
+the editor, and then click on the Fullscreen icon. )
+
+```python.run:height=800,width=1200
 
 ```
 
 Here are some hints with interesting programs that you can study for ideas:
 
-::: details Crazy Turtle Walk
+## Crazy Turtle Walk
+
 ```python
 import turtle
 tina = turtle.Turtle()
@@ -56,9 +60,8 @@ for i in range(10):
   turtle.right(15)
 
 ```
-:::
 
-::: details Flaming Ninja Star
+## Flaming Ninja Star
 ```python
 import random
 import turtle
@@ -106,10 +109,8 @@ for i in range(25):
 
 t.hideturtle() # Hide your turtle so you can see the pattern.
 ```
-:::
 
-
-::: details Yin Yang Program
+### Yin Yang Program
 ```python 
 from turtle import *
 

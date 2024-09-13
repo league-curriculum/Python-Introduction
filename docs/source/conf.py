@@ -70,6 +70,10 @@ html_css_files = [
     'css/custom.css',
 ]
 
+html_js_files = [
+    'js/custom.js',
+]
+
 html_extra_path = ['html', 'images']
 
 
@@ -80,9 +84,9 @@ def source_read_handler(app, docname, source):
         # Your preprocessing logic here
         content = source[0]
 
-        def f(content, height):
+        def f(content, height, width):
 
-            return generate_trinket_iframe(content, width=700, height=height, embed_type='python')
+            return generate_trinket_iframe(content, width=width, height=height, embed_type='python')
     
         source[0], code  =  replace_python(content, 'python', f)
        
@@ -91,3 +95,16 @@ def source_read_handler(app, docname, source):
     
 def setup(app):
     app.connect('source-read', source_read_handler)
+    
+    
+if __name__ == '__main__':
+    
+    # Read module0/010_meet-tina.md into a string, using pathlib
+    from pathlib import Path
+    d = Path(__file__).parent
+    content = (d/'module0/010_meet-tina.md').read_text()
+    
+    c = [content]
+    r = source_read_handler(None, 'module0/010_meet-tina.md', c)
+    print(c[0])
+    

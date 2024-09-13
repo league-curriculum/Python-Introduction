@@ -153,7 +153,7 @@ s = "I can\'t decide if I like \" or \' more"
 
 
 
-# Turtle Variables
+## Turtle Variables
 
 We can use variables to store commands for our turtle. Let's start with a program that we created 
 earlier, but update it to use variables. 

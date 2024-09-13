@@ -74,7 +74,7 @@ Now try creating your own crazy progam. This time, you will start from an empty
 file, so copy parts from other programs to get started. You can also 
 get some [great ideas from this website](https://allinpython.com/top-5-awesome-python-turtle-graphics/)
 
-```python.run:height='600'
+```python.run:height=600
 
 ```
 

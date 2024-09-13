@@ -16,30 +16,39 @@ def replace_python(source: str, base_name: str = None, replacement_f=None):
     Returns:
 
     """
-    pattern = re.compile(r"```python\.run(?:\:\s*height='?(\d+)'?)?(?:,width='?(\d+)%?'?)?\n(.*?)```",
-                         re.DOTALL)
+
+    pattern = re.compile(r"```python\.run([^\n]*)\n(.*?)```", re.DOTALL)
+
 
     counter = [1]
     code = {}
 
     # Function to replace matched objects
     def replacer(match):
-        m = match.group(0).strip('```')
+        args = match.group(1)
+        code = match.group(2)
 
-        lines = m.split('\n')
-        first = lines[0]
-        py_code = '\n'.join(lines[1:])
-        if ':' in first:
-            _, spec = first.split(':')
+        py_code = code
+        hw = {}
+        width = height = None
+        
+        if ':' in args:
+            _, spec = args.split(':')
             spec = spec.strip()
-            _, height = spec.split('=')
-            height = int(height.strip("'"))
-        else:
-            height = (len(py_code.split('\n')) * 17) + 110
+            parts = spec.split(',')
+            for part in parts:
+                key, value = part.split('=')
+                hw[key] = value.strip()
+            
+            height = int(hw.get('height', None)) if 'height' in hw else None
+            width = int(hw.get('width', None)) if 'width' in hw else None
+            
+       
+        # Calc height from number of lines of code
+        height = height or (len(py_code.split('\n')) * 17) + 110
+        width = width or 700
 
-        replacement = replacement_f(py_code, height)
-
-        assert isinstance(replacement, str), f"Replacement must be a string, got {type(replacement)}"
+        replacement = replacement_f(py_code, height, width)
 
         counter[0] += 1
 
@@ -77,3 +86,46 @@ def generate_trinket_iframe(code, width='300', height='500', embed_type='python'
     iframe_html = f'<div class="iframe-container"><iframe width="{width}" height="{height}" src="{src_url}" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>'
 
     return iframe_html
+
+
+# Testing
+if __name__ == '__main__':
+    
+    def f(content, height, width):
+        return f"|height={height} width={width}|{content.strip()}|"
+    
+    code = """
+```python.run
+program
+```
+foobar
+"""
+    v = replace_python(code, 'python', f)
+    assert v[0] =='\n|height=144 width=700|program|\nfoobar\n', v[0]
+    
+    code = """
+```python.run:height=300
+program
+```
+foobar
+"""
+    v = replace_python(code, 'python', f)
+    assert v[0] =='\n|height=300 width=700|program|\nfoobar\n', v[0]
+    
+    code = """
+```python.run:height=300,width=500
+program
+```
+foobar
+"""
+    v = replace_python(code, 'python', f)
+    assert v[0] =='\n|height=300 width=500|program|\nfoobar\n', v[0]
+    
+    code = """
+```python.run:width=500
+program
+```
+foobar
+"""
+    v = replace_python(code, 'python', f)
+    assert v[0] =='\n|height=144 width=500|program|\nfoobar\n', v[0]
