@@ -10,6 +10,8 @@ powers websites and apps like Yelp.com and Twitter.
 This Hour of code activity was originally created by Trinket.io, and this course is 
 a modified version of [A Visual Introduction to Python](https://hourofpython.com/a-visual-introduction-to-python/), with some extra lessons and exercises.
 
+Development of The LEAGUE’s curriculum is generously funded by the Itzkowitz Family Foundation.
+
 ```{toctree}
 :maxdepth: 2
 :hidden:
