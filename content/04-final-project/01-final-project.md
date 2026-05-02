@@ -1,4 +1,5 @@
 ---
+weight: 10
 title: 'Final Project'
 uid: 8YGp3Lm5
 ---
@@ -22,8 +23,8 @@ Your assignment for this project to make a turtle program that draws something, 
 
 You should also try to include an `if/else` in your program, and ask for input with `input()`
 
-But first, visit the [Python Turtle Library Documentation](https://docs.python.org/3/library/turtle.html)
-to see if there is anything you'd like to try. You should especially look at [The Graphics Methods](https://docs.python.org/3/library/turtle.html#turtle-graphics-reference) to see if there are any functions that look interesting, like `stamp()`.
+But first, visit the <a href="https://docs.python.org/3/library/turtle.html" target="_blank" rel="noopener">Python Turtle Library Documentation</a>
+to see if there is anything you'd like to try. You should especially look at <a href="https://docs.python.org/3/library/turtle.html#turtle-graphics-reference" target="_blank" rel="noopener">The Graphics Methods</a> to see if there are any functions that look interesting, like `stamp()`.
 
 
 {{< callout type="info" >}}

@@ -1,4 +1,5 @@
 ---
+weight: 60
 title: 'Going in Circles'
 uid: GWCQRYzL
 ---

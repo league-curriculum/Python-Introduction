@@ -1,4 +1,5 @@
 ---
+weight: 70
 title: 'Making Choices with If and Else'
 uid: X7MLqme7
 ---

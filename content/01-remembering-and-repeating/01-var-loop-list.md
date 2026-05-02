@@ -1,4 +1,5 @@
 ---
+weight: 10
 title: 'Variables Loops and Lists'
 uid: iPwsX6bI
 ---

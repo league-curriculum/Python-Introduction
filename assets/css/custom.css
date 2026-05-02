@@ -1,0 +1,19 @@
+/* Project-level overrides. Loaded after theme CSS by themes/curriculum-hugo-theme/layouts/_default/baseof.html. */
+
+/* Theme defines --content-width: 46em (~736px), which squeezes the embedded
+   Trinket iframes. Widen to a fluid clamp: at least 46em, up to 1400px,
+   capped at 95vw so we leave a small breathing margin on huge displays. */
+:root {
+  --content-width: clamp(46em, 95vw, 1400px);
+}
+
+/* Trinket iframe wrapper — let it fill the content area horizontally. */
+.iframe-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 1rem 0;
+}
+.iframe-container iframe {
+  display: block;
+  max-width: 100%;
+}

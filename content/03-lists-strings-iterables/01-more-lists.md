@@ -1,4 +1,5 @@
 ---
+weight: 10
 title: 'Iterating over Iterables'
 uid: ElLj6SDw
 ---

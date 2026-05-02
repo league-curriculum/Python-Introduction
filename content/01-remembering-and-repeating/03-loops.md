@@ -1,4 +1,5 @@
 ---
+weight: 30
 title: 'Loops for Easy Squares'
 uid: lmumwxNV
 ---

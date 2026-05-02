@@ -19,8 +19,13 @@
 {{- $code := trim .Inner "\n" -}}
 {{- $lines := len (split $code "\n") -}}
 {{- $height := .Get "height" | default (printf "%d" (add (mul $lines 17) 110)) -}}
-{{- $width := .Get "width" | default "700" -}}
+{{- /* Width defaults to 100% so the iframe expands with the responsive content
+       area. Authors may pin a fixed pixel width by passing width="600". */ -}}
+{{- $width := .Get "width" | default "100%" -}}
 {{- $type := .Get "type" | default "python" -}}
-{{- $encoded := $code | urlquery -}}
+{{- /* Match Python's urllib.parse.quote: spaces -> %20, not +. Hugo's urlquery
+       form-encodes spaces as +, which Trinket interprets as literal '+' chars.
+       Replace + with %20 to get path-encoding semantics. */ -}}
+{{- $encoded := replace ($code | urlquery) "+" "%20" -}}
 {{- $src := printf "https://trinket.io/tools/1.0/jekyll/embed/%s#code=%s" $type $encoded -}}
 <div class="iframe-container"><iframe width="{{ $width }}" height="{{ $height }}" src="{{ $src }}" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>

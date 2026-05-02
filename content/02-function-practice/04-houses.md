@@ -1,4 +1,5 @@
 ---
+weight: 40
 title: 'Drawing Houses'
 uid: 81JBY0xE
 ---

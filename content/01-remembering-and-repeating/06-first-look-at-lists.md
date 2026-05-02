@@ -1,4 +1,5 @@
 ---
+weight: 60
 title: 'First Look at Lists'
 uid: 4wAjSRG5
 ---
