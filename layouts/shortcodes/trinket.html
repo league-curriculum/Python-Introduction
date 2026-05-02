@@ -1,0 +1,26 @@
+{{- /*
+  Trinket.io Python embed.
+
+  Mirrors docs/source/preprocess.py:generate_trinket_iframe so converted
+  lessons render identically to the legacy Sphinx build.
+
+  Usage:
+    {{< trinket >}}
+    import turtle
+    tina = turtle.Turtle()
+    tina.forward(100)
+    {{< /trinket >}}
+
+  Params:
+    height  optional, pixels. Default = (line_count * 17) + 110.
+    width   optional, pixels. Default = 700.
+    type    optional Trinket embed type. Default = "python".
+*/ -}}
+{{- $code := trim .Inner "\n" -}}
+{{- $lines := len (split $code "\n") -}}
+{{- $height := .Get "height" | default (printf "%d" (add (mul $lines 17) 110)) -}}
+{{- $width := .Get "width" | default "700" -}}
+{{- $type := .Get "type" | default "python" -}}
+{{- $encoded := $code | urlquery -}}
+{{- $src := printf "https://trinket.io/tools/1.0/jekyll/embed/%s#code=%s" $type $encoded -}}
+<div class="iframe-container"><iframe width="{{ $width }}" height="{{ $height }}" src="{{ $src }}" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>

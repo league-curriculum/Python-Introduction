@@ -1,0 +1,12 @@
+title: Introduction to Programming with Python
+uid: 8a895d56-c39b-460c-92aa-8777371f28bd
+type: course
+tier: 3
+grades: 6-8
+category: introductory-programming
+topics: ["python", "turtle-graphics", "variables", "loops", "functions", "lists", "conditionals"]
+prerequisites: []
+lessons: 25
+estimated_weeks: 10
+repo_url: https://github.com/league-curriculum/Python-Introduction
+description: A first programming course using Python and turtle graphics for grades 6-8. Browser-based via Trinket, no local install required. Covers variables, loops, functions, conditionals, and lists across 25 lessons plus an open-ended final project.
