@@ -1,4 +1,4 @@
 ---
-title: "Module 1: Remembering and Repeating"
+title: "Remembering and Repeating"
 weight: 20
 ---

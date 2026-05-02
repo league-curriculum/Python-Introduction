@@ -1,4 +1,4 @@
 ---
-title: "Module 2: Function Practice"
+title: "Function Practice"
 weight: 30
 ---
